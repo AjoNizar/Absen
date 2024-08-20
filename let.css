@@ -88,19 +88,19 @@ form .input-box span.details{
  form .button input{
    height: 100%;
    width: 100%;
-   border-radius: 5px;
+   border-radius: 10px;
    border: none;
    color: #fff;
    font-size: 18px;
    font-weight: 500;
-   letter-spacing: 1px;
+   letter-spacing: 10px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   background: linear-gradient(135deg, #70b3fe, #000000 );
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(-135deg,  #70b3fe, #000000);
   }
  @media(max-width: 584px){
  .container{
@@ -126,3 +126,19 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+button{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg,  #70b3fe, #000000 );
+
+}
+
