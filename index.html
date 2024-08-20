@@ -41,10 +41,13 @@
             <div class="input-box">
             <label for="KETERANGAN" class="form-label">KETERANGAN</label>
                 <input type="text" id="KETERANGAN" name="KETERANGAN" class="form-control" placeholder="Isikan Hadir" required>
-            </div>
-          </div>
+                            </div>
+                      </div>
           <div class="button">
             <input type="submit" value="Kirim">
+          </div>
+          <div class="button">
+            <button type="submit" onclick="location.href='https://docs.google.com/spreadsheets/d/1kU0VtxJElPyBc9itIvKqQiTc519cAwSOhqYf1ZrUop8/edit?gid=1688148884#gid=1688148884'">Result</button>
           </div>
         </form>
       </div>
@@ -59,8 +62,8 @@
           form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-              .then(response => $("#form_alerts").html("<div class='alert alert-success'>Terima Gaji Ehh Terima Kasih.</div>"))
-              .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Nohh Salah Noohh!.</div>"))
+              .then(response => $("#form_alerts").html("<div class='alert alert-success'>Terima Kasih.</div>"))
+              .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Tolong Cek Kembali!.</div>"))
               form.reset();
           })
       </script>
